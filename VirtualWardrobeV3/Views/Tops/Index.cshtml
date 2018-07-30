@@ -1,0 +1,72 @@
+﻿@model IEnumerable<VirtualWardrobeV3.Top>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+
+<div class="row">
+    <div class="col-md-3">
+        @foreach (var item in Model)
+        {
+            <img src="~/Photos/@Html.DisplayFor(modelItem => item.Photo)" style="width:250px;" /><br /><br />
+            <p>
+                <strong>@Html.DisplayFor(modelItem => item.Name)</strong><br />
+                @Html.DisplayFor(modelItem => item.Type) |
+                @Html.DisplayFor(modelItem => item.Color) |
+                @Html.DisplayFor(modelItem => item.Season) |
+                @Html.DisplayFor(modelItem => item.Occasion) |
+                @Html.DisplayFor(modelItem => item.Size) |
+                <strong>@Html.DisplayFor(modelItem => item.Price)</strong><br />
+                @Html.ActionLink("Details", "Details", new { id = item.TopID })
+            </p>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Season)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Occasion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>*@

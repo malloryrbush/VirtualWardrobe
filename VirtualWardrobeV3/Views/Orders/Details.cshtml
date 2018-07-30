@@ -1,0 +1,66 @@
+﻿@model VirtualWardrobeV3.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClothingID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClothingID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bottom.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sho.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sho.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Top.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Top.Name)
+        </dd>
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

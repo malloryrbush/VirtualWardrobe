@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5c8f1031170c404ba434250271106a51" Name="Diagram1">
+        <EntityTypeShape EntityType="VirtualWardobeV3Model.Accessory" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VirtualWardobeV3Model.Bottom" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VirtualWardobeV3Model.Clothing" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VirtualWardobeV3Model.Order" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VirtualWardobeV3Model.Sho" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VirtualWardobeV3Model.Top" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Clothing_Accessories" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Orders_Accessories" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Clothing_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Orders_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Clothing_Shoes" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Clothing_Tops" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Orders_Shoes" ManuallyRouted="false" />
+        <AssociationConnector Association="VirtualWardobeV3Model.FK_Orders_Tops" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

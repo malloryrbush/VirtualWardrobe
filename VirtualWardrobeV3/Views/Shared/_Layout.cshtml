@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>Clothing Site</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Clothing Store</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Home">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="Tops">Tops</a></li>
+                    <li><a href="Bottoms">Bottoms</a></li>
+                    <li><a href="Accessories">Accessories</a></li>
+                    <li><a href="Shoes">Shoes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Clothing Store</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

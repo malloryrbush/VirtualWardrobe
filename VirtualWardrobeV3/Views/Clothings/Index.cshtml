@@ -1,0 +1,85 @@
+﻿@model IEnumerable<VirtualWardrobeV3.Clothing>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>TOPS</h2>
+        @foreach (var item in Model)
+        {
+            <img src="~/Photos/@Html.DisplayFor(modelItem => item.Top.Photo)" style="width:250px;" /><br /><br />
+            <p>
+                <strong>@Html.DisplayFor(modelItem => item.Top.Name)</strong><br />
+                @Html.DisplayFor(modelItem => item.Top.Type) |
+                @Html.DisplayFor(modelItem => item.Top.Color) |
+                @Html.DisplayFor(modelItem => item.Top.Season) |
+                @Html.DisplayFor(modelItem => item.Top.Occasion) |
+                @Html.DisplayFor(modelItem => item.Top.Size) |
+                <strong>@Html.DisplayFor(modelItem => item.Top.Price)</strong><br />
+                 @*@Html.ActionLink("Details", "/Details", new { id = item.TopID })*@
+            </p>
+        }
+    </div>
+
+    <div class="col-md-3">
+        <h2>BOTTOMS</h2>
+        @foreach (var item in Model)
+        {
+            <img src="~/Photos/@Html.DisplayFor(modelItem => item.Bottom.Photo)" style="width:250px;" /><br /><br />
+            <p>
+                <strong>@Html.DisplayFor(modelItem => item.Bottom.Name)</strong><br />
+                @Html.DisplayFor(modelItem => item.Bottom.Type) |
+                @Html.DisplayFor(modelItem => item.Bottom.Color) |
+                @Html.DisplayFor(modelItem => item.Bottom.Season) |
+                @Html.DisplayFor(modelItem => item.Bottom.Occasion) |
+                @Html.DisplayFor(modelItem => item.Bottom.Size) |
+                <strong>@Html.DisplayFor(modelItem => item.Bottom.Price)</strong><br />
+                @*@Html.ActionLink("Details", "Details", new { id = item.BottomID })*@
+            </p>
+        }
+    </div>
+
+    <div class="col-md-3">
+        <h2>ACCESSORIES</h2>
+        @foreach (var item in Model)
+        {
+            <img src="~/Photos/@Html.DisplayFor(modelItem => item.Accessory.Photo)" style="width:250px;" /><br /><br />
+            <p>
+                <strong>@Html.DisplayFor(modelItem => item.Accessory.Name)</strong><br />
+                @Html.DisplayFor(modelItem => item.Accessory.Type) |
+                @Html.DisplayFor(modelItem => item.Accessory.Color) |
+                @Html.DisplayFor(modelItem => item.Accessory.Season) |
+                @Html.DisplayFor(modelItem => item.Accessory.Occasion) |
+                @Html.DisplayFor(modelItem => item.Accessory.Size) |
+                <strong>@Html.DisplayFor(modelItem => item.Accessory.Price)</strong><br />
+                @*@Html.ActionLink("Details", "Details", new { id = item.AccessoryID })*@
+            </p>
+        }
+    </div>
+
+    <div class="col-md-3">
+        <h2>SHOES</h2>
+        @foreach (var item in Model)
+        {
+            <img src="~/Photos/@Html.DisplayFor(modelItem => item.Sho.Photo)" style="width:250px;" /><br /><br />
+            <p>
+                <strong>@Html.DisplayFor(modelItem => item.Sho.Name)</strong><br />
+                @Html.DisplayFor(modelItem => item.Sho.Type) |
+                @Html.DisplayFor(modelItem => item.Sho.Color) |
+                @Html.DisplayFor(modelItem => item.Sho.Season) |
+                @Html.DisplayFor(modelItem => item.Sho.Occasion) |
+                @Html.DisplayFor(modelItem => item.Sho.Size) |
+                <strong>@Html.DisplayFor(modelItem => item.Sho.Price)</strong><br />
+                @*@Html.ActionLink("Details", "Details", new { id = item.ShoeID })*@
+            </p>
+        }
+    </div>
+</div>

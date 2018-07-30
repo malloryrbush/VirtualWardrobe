@@ -1,0 +1,109 @@
+﻿body {
+    min-height:600px;
+}
+
+.body-content{
+    /*THINGS*/
+}
+
+.container-fluid{
+    min-width:1330px;
+    width:90%;
+    height:100%;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    width:100%;
+    display:inline-flex;
+    z-index:10;
+}
+
+.mainLinks{
+    color:white;
+}
+
+    .mainLinks:hover {
+        color: #f1bbbb;
+        text-decoration: none;
+    }
+
+li a, h2, p {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    color:darkslategrey;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul.nav.navbar-nav {
+    display:inline-flex;
+    justify-content: flex-end;
+}
+
+nav.navbar.navbar-default{
+    list-style-type:none;
+    border:none;
+}
+
+.navbar-brand {
+    background-color: white;
+    margin-left: 15%;
+    font-family: 'Oswald', sans-serif;
+    min-width:200px;
+}
+ul{
+    width:100%;
+    background-color:white;
+}
+
+.jumbotronOne {
+    display:flex;
+    min-height: 500px;
+    margin-top: 10%;
+    background-image: url('../Photos/wardrobe1.jpeg');
+    background-size: cover;
+    color: white;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Oswald', sans-serif;
+    -webkit-filter: grayscale(0.4);
+}
+.jumbotronTwo {
+    display:flex;
+    min-height: 500px;
+    margin-top: 10%;
+    background-image: url('../Photos/wardrobe2.jpeg');
+    background-size: cover;
+    color: white;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Oswald', sans-serif;
+    -webkit-filter: grayscale(0.5);
+}
+
+div.col-md-6 {
+    padding: 0px;
+}

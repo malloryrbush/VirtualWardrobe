@@ -1,0 +1,44 @@
+﻿@model VirtualWardrobeV3.Clothing
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <p> <strong> @Html.DisplayFor(model => model.Top.Name) </strong></p><br /><br />
+
+            <img src="~/Photos/@Html.DisplayFor(model => model.Top.Photo)" style="width:250px;" /><br /><br />
+        </div>
+        <div class="col-md-6">
+            <p>
+                @Html.DisplayNameFor(model => model.Top.Type) :
+                @Html.DisplayFor(model => model.Top.Type) <br />
+
+                @Html.DisplayNameFor(model => model.Top.Color) :
+                @Html.DisplayFor(model => model.Top.Color) <br />
+
+                @Html.DisplayNameFor(model => model.Top.Season) :
+                @Html.DisplayFor(model => model.Top.Season)<br />
+
+                @Html.DisplayNameFor(model => model.Top.Occasion) :
+                @Html.DisplayFor(model => model.Top.Occasion)<br />
+
+                @Html.DisplayNameFor(model => model.Top.Size) :
+                @Html.DisplayFor(model => model.Top.Size)<br />
+
+                <strong>
+                    @Html.DisplayNameFor(model => model.Top.Price) :
+                    @Html.DisplayFor(model => model.Top.Price)
+                </strong>
+            </p>
+        </div>
+    </div>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ClothingID }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
